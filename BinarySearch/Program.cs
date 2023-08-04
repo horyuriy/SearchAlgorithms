@@ -22,7 +22,7 @@
                 {
                     break;
                 }
-                var searchResult = BinarySearch.SearchBinary(array, k, 0, array.Length - 1);
+                var searchResult = BinarySearch.SearchBinaryRecursive(array, k, 0, array.Length - 1);
                 if(searchResult < 0)
                 {
                     Console.WriteLine("Element with value {0} not found", k);

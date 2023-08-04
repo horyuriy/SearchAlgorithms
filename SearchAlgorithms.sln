@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialSearch", "Sequent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{1DAF5685-2CB8-4A71-82A1-291055C34FE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonSubsting", "LongestCommonSubsting\LongestCommonSubsting.csproj", "{F5991672-72DB-4D08-8063-5FF75861348E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1DAF5685-2CB8-4A71-82A1-291055C34FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DAF5685-2CB8-4A71-82A1-291055C34FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DAF5685-2CB8-4A71-82A1-291055C34FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5991672-72DB-4D08-8063-5FF75861348E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5991672-72DB-4D08-8063-5FF75861348E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5991672-72DB-4D08-8063-5FF75861348E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5991672-72DB-4D08-8063-5FF75861348E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

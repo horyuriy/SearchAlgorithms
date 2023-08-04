@@ -8,7 +8,7 @@ namespace BinarySearch
 {
     public static class BinarySearch
     {
-        public static int SearchBinary(int[] array, int searchedValue, int first, int last)
+        public static int SearchBinaryRecursive(int[] array, int searchedValue, int first, int last)
         {
             if (first > last)
             {
@@ -24,13 +24,34 @@ namespace BinarySearch
             {
                 if( middleValue >searchedValue)
                 {
-                    return SearchBinary(array, searchedValue, first, middle-1);
+                    return SearchBinaryRecursive(array, searchedValue, first, middle-1);
                 }
                 else
                 {
-                    return SearchBinary(array, searchedValue, middle + 1, last);
+                    return SearchBinaryRecursive(array, searchedValue, middle + 1, last);
                 }
             }
+        }
+        public static int SearchBinaryItetative(int[] array, int searchedValue, int left, int right)
+        {
+            while(left<=right)
+            {
+                var middle = (left + right) / 2;
+                if(searchedValue == array[middle])
+                {
+                    return middle;
+                }
+                else if( searchedValue < array[middle])
+                {
+                    right = middle -1 ;
+
+                }
+                else
+                {
+                    left = middle + 1 ;
+                }
+            }
+            return -1;
         }
     }
 }
